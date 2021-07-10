@@ -1,0 +1,17 @@
+{
+  "solid": false,
+  "cuboids": [
+    {
+      "from": [ 0.25, 0, 0.25 ],
+      "to": [ 0.75, 1, 0.75 ],
+      "textures": {
+        "neg_x": "hardcodedmod:items/fluid_pouch",
+        "pos_x": "hardcodedmod:items/fluid_pouch",
+        "neg_y": "hardcodedmod:items/fluid_pouch",
+        "pos_y": "hardcodedmod:items/fluid_pouch",
+        "neg_z": "hardcodedmod:items/fluid_pouch",
+        "pos_z": "hardcodedmod:items/fluid_pouch"
+      }
+    }
+  ]
+}
