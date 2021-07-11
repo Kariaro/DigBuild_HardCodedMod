@@ -3,6 +3,7 @@
 This mod introduces special features to the DigBuild game such as:
 
 * Fluid Storage
+* Wood doors
 
 # Usage
 
