@@ -1,0 +1,14 @@
+{
+  "variants": [
+    {
+      "when": {},
+      "geometry": "digbuild:blocks/_pillar_y",
+      "variables": {
+        "textures": {
+          "side": "hardcodedmod:blocks/pine_log_side",
+          "end": "hardcodedmod:blocks/pine_log_top"
+        }
+      }
+    }
+  ]
+}

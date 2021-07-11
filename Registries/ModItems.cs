@@ -15,6 +15,12 @@ namespace HardCodedMod.Content.Registries {
         public static Item FluidPouch { get; private set; } = null!;
         public static Item FluidPouchWater { get; private set; } = null!;
         public static Item WoodDoor { get; private set; } = null!;
+        public static Item WoodDoorTest { get; private set; } = null!;
+
+        
+        public static Item PinePlanks { get; private set; } = null!;
+        public static Item PineLog { get; private set; } = null!;
+        public static Item StoneBrick { get; private set; } = null!;
 
         internal static void Register(RegistryBuilder<Item> registry) {
             FluidPouch = registry.Create(new ResourceName(HardCodedMod.Domain, "fluid_pouch"), builder => {
@@ -33,6 +39,26 @@ namespace HardCodedMod.Content.Registries {
                     [new Vector3I(0, 0, 0)] = ModBlocks.WoodDoorBottom
                 }));
             });
+
+            WoodDoorTest = registry.Create(new ResourceName(HardCodedMod.Domain, "wood_door_test_item"),
+                BlockPlacement(() => ModBlocks.WoodDoorTest)
+            );
+
+            PinePlanks = registry.Create(new ResourceName(HardCodedMod.Domain, "pine_planks"),
+                BlockPlacement(() => ModBlocks.PinePlanks)
+            );
+
+            PineLog = registry.Create(new ResourceName(HardCodedMod.Domain, "pine_log"),
+                BlockPlacement(() => ModBlocks.PineLog)
+            );
+
+            StoneBrick = registry.Create(new ResourceName(HardCodedMod.Domain, "stone_brick"),
+                BlockPlacement(() => ModBlocks.StoneBrick)
+            );
+        }
+
+        private static Action<ItemBuilder> BlockPlacement(Func<Block> blockSupplier) {
+            return builder => builder.Attach(new PlaceBlockBehavior(blockSupplier));
         }
     }
 }

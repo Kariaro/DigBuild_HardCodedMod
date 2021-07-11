@@ -1,0 +1,20 @@
+{
+  "variants": [
+    {
+      "when": { "part": "bottom", "state": "closed" },
+      "geometry": "hardcodedmod:blocks/wood_door_bottom"
+    },
+	{
+      "when": { "part": "top", "state": "closed" },
+      "geometry": "hardcodedmod:blocks/wood_door_top"
+    },
+	{
+      "when": { "part": "bottom", "state": "open" },
+      "geometry": "hardcodedmod:blocks/wood_door_bottom_open"
+    },
+	{
+      "when": { "part": "top", "state": "open" },
+      "geometry": "hardcodedmod:blocks/wood_door_top_open"
+    }
+  ]
+}
