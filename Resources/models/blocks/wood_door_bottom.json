@@ -1,0 +1,8 @@
+{
+  "variants": [
+    {
+      "when": {},
+      "geometry": "hardcodedmod:blocks/wood_door_bottom"
+    }
+  ]
+}

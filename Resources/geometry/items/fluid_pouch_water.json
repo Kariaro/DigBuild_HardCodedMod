@@ -1,0 +1,9 @@
+{
+  "elements": [
+    {
+      "_type": "digbuild:include_obj",
+      "model": "fluid_pouch_water",
+      "layer": "digbuild:solid"
+    }
+  ]
+}
